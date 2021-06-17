@@ -1,0 +1,38 @@
+{
+
+    "manifest_version": 2,
+    "name": "dev2prod",
+    "version": "1.0",
+  
+    "description": "Change entre prod et dev",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+
+    "browser_action": {
+        "default_icon": "icons/border-48.png",
+        "default_title": "dev2prod"
+
+      },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+      ],
+
+      "background": {
+        "scripts": ["background.js"]
+      },
+
+
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": false
+
+      }
+
+
+  
+  }
